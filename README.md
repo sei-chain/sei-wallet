@@ -29,7 +29,7 @@
 
 </div>
 
-### Verify the download
+### Verify the download.
 
 Compare the file you downloaded with the value below before you run it. A mismatch means the file did not arrive intact. The file names are in the table above.
 
